@@ -11,7 +11,7 @@ import { BldgModule } from './bldg/bldg.module';
       host: process.env.CLOUD_HOST,
       port: parseInt(process.env.CLOUDSQL_PORT || '5432', 10),
       username: process.env.CLOUD_USER,
-      password: process.env.CLOUD_PASSWORD,
+      password: process.env.CLOUD_PASS,
       database: process.env.CLOUD_DB,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: false,
